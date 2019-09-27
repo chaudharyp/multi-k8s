@@ -11,6 +11,8 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+console.log(keys);
+
 const pgClient = new Pool({
     user: keys.pgUser,
     host: keys.pgHost,
